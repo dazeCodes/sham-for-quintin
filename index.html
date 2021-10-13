@@ -1,509 +1,83 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en-US"> <![endif]-->
-<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en-US"> <![endif]-->
-<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en-US"> <![endif]-->
-<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en-US"> <![endif]-->
-<!--[if gt IE 9]><!--><html class="no-js" lang="en-US"><!--<![endif]-->
-<!-- the "no-js" class is for Modernizr. --> 
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Sham &#8211; Creative Shopping Theme</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- Load Fonts -->
-	<link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Inconsolata:300,400,500,700|Unica+One:300,400,500,700">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" type="text/css" media="all" href="css/bootstrap.min.css">
-	<!-- Load Liliom Font Icons -->
-	<link rel="stylesheet" type="text/css" media="all" href="css/Liliom-icons.css">
-	<!-- Load Owl Carousel -->
-	<link rel="stylesheet" type="text/css" media="all" href="css/owl.carousel.css">
-	<!-- Load Pace -->
-	<link rel="stylesheet" type="text/css" media="all" href="css/pace.css">
-	<!-- Load Fancybox -->
-	<link rel="stylesheet" type="text/css" media="all" href="css/jquery.fancybox.css">
-	<!-- Theme Custom Style -->
-	<link rel="stylesheet" type="text/css" media="all" href="css/style.css">
-
-	<!-- Theme Modernizr JavaScript -->
-	<script type="text/javascript" src="js/modernizr.custom.js"></script>
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-	    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	
+	<title>Document</title>
 </head>
 <body>
+	<header>
 
-	<div class="nav-container">
-	    <nav class="navbar navbar-default navbar-fixed-top">
-	      	<div class="container">
-	        	<div class="navbar-header">
-			        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-			            <span class="icon-bar"></span>
-			            <span class="icon-bar"></span>
-			            <span class="icon-bar"></span>
-			        </button>
-			        <a class="navbar-brand" href="index.html">
-			          	<img src="img/logo2.png" width="24px !important" alt="Sham Theme">
-			        </a>
-	        	</div>
-	        	<ul class="navbar-nav navbar-icons">
-			    	<li class="shopping-cart">
-			            <a href="#!" class="li-icon" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
-			                <i class="lil-shopping_cart"></i>
-							<!-- <span class="badge">4</span> -->
-			            </a>
-			            <!-- <ul class="dropdown-menu">
-			                <div class="dropdown-wrap" slim-scroll>
-			                    <li>
-			                        <a href="product.html"><img src="img/products/img.jpg" class="img-responsive product-img" alt=""></a>
-			                        <div class="product-details">
-			                            <p class="product-title clearfix"><a href="product.html">Clip Chair Large</a></p>
-			                            <div class="product-price clearfix">$9</div>
-			                        </div>
-			                    </li>
-			                    <li>
-			                        <a href="product.html"><img src="img/products/img.jpg" class="img-responsive product-img" alt=""></a>
-			                        <div class="product-details">
-			                            <p class="product-title clearfix"><a href="product.html">Clip Chair #1</a></p>
-			                            <div class="product-price clearfix">$60</div>
-			                        </div>
-			                    </li>
-			                    <li>
-			                        <a href="product.html"><img src="img/products/img.jpg" class="img-responsive product-img" alt=""></a>
-			                        <div class="product-details">
-			                            <p class="product-title clearfix"><a href="product.html">Clip Chair #2</a></p>
-			                            <div class="product-price clearfix">$19.5</div>
-			                        </div>
-			                    </li>
-			                    <li>
-			                        <a href="product.html"><img src="img/products/img.jpg" class="img-responsive product-img" alt=""></a>
-			                        <div class="product-details">
-			                            <p class="product-title clearfix"><a href="product.html">Lamp LW3</a></p>
-			                            <div class="product-price clearfix">$90</div>
-			                        </div>
-			                    </li>
-			                </div>
-			                <li class="dropdown-footer">
-				                <a href="cart.html">View Cart</a>
-			                </li>
-			            </ul> -->
-			        </li>
-			        <li><a href="#!" class="li-icon" id="trigger-overlay"><i class="lil-search"></i></a></li>
-			    </ul>
-	        	<div id="navbar" class="navbar-collapse collapse">
-				    <ul class="nav navbar-nav navbar-left">
-				        <li class="active">
-				            <a href="index.html" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Acoustic <i class="caret"></i></a>
-				            <ul class="dropdown-menu">
-				                <li><a href="index.html">Home Default</a></li>
-				                <li class="active"><a href="index-2.html">Home Slider</a></li>
-				            </ul>
-				        </li>
-				        <li>
-				            <a href="#!" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Design<i class="caret"></i></a>
-				            <ul class="dropdown-menu">
-				                <li><a href="products.html">Full Width Shop</a></li>
-				                <li><a href="products-with-filter.html">Shop With Filter</a></li>
-				                <li><a href="products-sidebar-left.html">Sidebar Left</a></li>
-				                <li><a href="products-sidebar-right.html">Sidebar Right</a></li>
-				                <li><a href="product.html">Simple Product</a></li>
-				            </ul>
-				        </li>
-				        <li>
-				            <a href="#!" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Installation <i class="caret"></i></a>
-				            <ul class="dropdown-menu">
-				                <li><a href="wishlist.html">Wishlist</a></li>
-				                <li><a href="cart.html">Cart</a></li>
-				                <li><a href="checkout.html">Checkout</a></li>
-				                <li><a href="order-received.html">Order Received</a></li>
-				                <li><a href="order-tracking.html">Order Tracking</a></li>
-				            </ul>
-				        </li>
-				        <li>
-				            <a href="#!" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">New gear <i class="caret"></i></a>
-				            <ul class="dropdown-menu">
-				                <li><a href="page.html">Page Default</a></li>
-				                <li><a href="login-register.html">Login / Register</a></li>
-				                <li><a href="404.html">Not Found (404)</a></li>
-				                <li><a href="faqs.html">FAQ'S</a></li>
-				            </ul>
-				        </li>
-				        <li>
-				            <a href="#!" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Used & Vintage<i class="caret"></i></a>
-				            <ul class="dropdown-menu">
-				                <li><a href="page.html">Page Default</a></li>
-				                <li><a href="login-register.html">Login / Register</a></li>
-				                <li><a href="404.html">Not Found (404)</a></li>
-				                <li><a href="faqs.html">FAQ'S</a></li>
-				            </ul>
-				        </li>
-				        <li>
-				            <a href="#!" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Repairs <i class="caret"></i></a>
-				            <ul class="dropdown-menu">
-				                <li><a href="page.html">Page Default</a></li>
-				                <li><a href="login-register.html">Login / Register</a></li>
-				                <li><a href="404.html">Not Found (404)</a></li>
-				                <li><a href="faqs.html">FAQ'S</a></li>
-				            </ul>
-				        </li>
-				        <li>
-				            <a href="#!" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Sell & Trade <i class="caret"></i></a>
-				            <ul class="dropdown-menu">
-				                <li><a href="page.html">Page Default</a></li>
-				                <li><a href="login-register.html">Login / Register</a></li>
-				                <li><a href="404.html">Not Found (404)</a></li>
-				                <li><a href="faqs.html">FAQ'S</a></li>
-				            </ul>
-				        </li>
-				        <li><a href="about.html">About</a></li>
-				        <li><a href="contact.html">Contact</a></li>
-				    </ul>
-			    </div><!--/.nav-collapse -->
-	      	</div><!--/.container -->
-	    </nav>
-	</div><!-- /.nav-container -->
-
-
-	<header class="header fullscreen" style="background-image: url('img/background.jpeg');">
-		<div class="container align-vertical">
-			<div class="row">
-				<div class="col-sm-7 text-left">
-					<h1>Instock New and used gearfeed<span class="typed-cursor">...</span></h1>
-					<p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-					</p>
-					<div class="button-group">
-						<a href="#!" class="btn btn-primary">Shop Now</a>
-						<a href="products-sidebar-left.html" class="btn btn-default">Products</a>
-					</div>
-				</div>
-			</div><!-- /.row -->
-		</div><!-- /.container -->
 	</header>
-
-	<section class="section products" id="home-products">
-		<div class="container">
-			<div class="row">
-				<div class="section-title text-center">
-					<h3><i class="line"></i>Items<i class="line"></i></h3>
-					<p>All the items here are in stock and ready to ship.</p>
-				</div>
-				<div class="masonry">
-					<div class="product col-md-4 col-sm-6 col-xs-12" data-product-id="1">
-						<div class="inner-product">
-							<div class="product-thumbnail">
-								<img src="img/one.png" class="img-responsive" alt="">
-							</div>
-							<div class="product-details text-center">
-								<div class="align-vertical">
-									<h3 class="product-title">SSL2 / SSL2+ with Production Pack Expansion</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and type...</p>
-									<p class="product-price">$229.99</p>
-									<div class="product-btns">
-										<span data-toggle="tooltip" data-placement="top" title="Add To Cart">
-											<a href="#!" class="li-icon add-to-cart"><i class="lil-shopping_cart"></i></a>
-										</span>
-										<span data-toggle="tooltip" data-placement="top" title="View">
-											<a href="product.html" class="li-icon view-details"><i class="lil-search"></i></a>
-										</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div><!-- /.product -->
-					<div class="product col-md-4 col-sm-6 col-xs-12" data-product-id="1">
-						<div class="inner-product">
-							<div class="product-thumbnail">
-								<img src="img/one.png" class="img-responsive" alt="">
-							</div>
-							<div class="product-details text-center">
-								<div class="align-vertical">
-									<h3 class="product-title">SSL2 / SSL2+ with Production Pack Expansion</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and type...</p>
-									<p class="product-price">$229.99</p>
-									<div class="product-btns">
-										<span data-toggle="tooltip" data-placement="top" title="Add To Cart">
-											<a href="#!" class="li-icon add-to-cart"><i class="lil-shopping_cart"></i></a>
-										</span>
-										<span data-toggle="tooltip" data-placement="top" title="View">
-											<a href="product.html" class="li-icon view-details"><i class="lil-search"></i></a>
-										</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div><!-- /.product -->
-					<div class="product col-md-4 col-sm-6 col-xs-12" data-product-id="1">
-						<div class="inner-product">
-							<div class="product-thumbnail">
-								<img src="img/one.png" class="img-responsive" alt="">
-							</div>
-							<div class="product-details text-center">
-								<div class="align-vertical">
-									<h3 class="product-title">SSL2 / SSL2+ with Production Pack Expansion</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and type...</p>
-									<p class="product-price">$229.99</p>
-									<div class="product-btns">
-										<span data-toggle="tooltip" data-placement="top" title="Add To Cart">
-											<a href="#!" class="li-icon add-to-cart"><i class="lil-shopping_cart"></i></a>
-										</span>
-										<span data-toggle="tooltip" data-placement="top" title="View">
-											<a href="product.html" class="li-icon view-details"><i class="lil-search"></i></a>
-										</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div><!-- /.product -->
-					<div class="product col-md-4 col-sm-6 col-xs-12" data-product-id="1">
-						<div class="inner-product">
-							<div class="product-thumbnail">
-								<img src="img/one.png" class="img-responsive" alt="">
-							</div>
-							<div class="product-details text-center">
-								<div class="align-vertical">
-									<h3 class="product-title">SSL2 / SSL2+ with Production Pack Expansion</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and type...</p>
-									<p class="product-price">$229.99</p>
-									<div class="product-btns">
-										<span data-toggle="tooltip" data-placement="top" title="Add To Cart">
-											<a href="#!" class="li-icon add-to-cart"><i class="lil-shopping_cart"></i></a>
-										</span>
-										<span data-toggle="tooltip" data-placement="top" title="View">
-											<a href="product.html" class="li-icon view-details"><i class="lil-search"></i></a>
-										</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div><!-- /.product -->
-					<div class="product col-md-4 col-sm-6 col-xs-12" data-product-id="1">
-						<div class="inner-product">
-							<div class="product-thumbnail">
-								<img src="img/one.png" class="img-responsive" alt="">
-							</div>
-							<div class="product-details text-center">
-								<div class="align-vertical">
-									<h3 class="product-title">SSL2 / SSL2+ with Production Pack Expansion</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and type...</p>
-									<p class="product-price">$229.99</p>
-									<div class="product-btns">
-										<span data-toggle="tooltip" data-placement="top" title="Add To Cart">
-											<a href="#!" class="li-icon add-to-cart"><i class="lil-shopping_cart"></i></a>
-										</span>
-										<span data-toggle="tooltip" data-placement="top" title="View">
-											<a href="product.html" class="li-icon view-details"><i class="lil-search"></i></a>
-										</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div><!-- /.product -->
-					<div class="product col-md-4 col-sm-6 col-xs-12" data-product-id="1">
-						<div class="inner-product">
-							<div class="product-thumbnail">
-								<img src="img/one.png" class="img-responsive" alt="">
-							</div>
-							<div class="product-details text-center">
-								<div class="align-vertical">
-									<h3 class="product-title">SSL2 / SSL2+ with Production Pack Expansion</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and type...</p>
-									<p class="product-price">$229.99</p>
-									<div class="product-btns">
-										<span data-toggle="tooltip" data-placement="top" title="Add To Cart">
-											<a href="#!" class="li-icon add-to-cart"><i class="lil-shopping_cart"></i></a>
-										</span>
-										<span data-toggle="tooltip" data-placement="top" title="View">
-											<a href="product.html" class="li-icon view-details"><i class="lil-search"></i></a>
-										</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div><!-- /.product -->
-					<div class="product col-md-4 col-sm-6 col-xs-12" data-product-id="1">
-						<div class="inner-product">
-							<div class="product-thumbnail">
-								<img src="img/one.png" class="img-responsive" alt="">
-							</div>
-							<div class="product-details text-center">
-								<div class="align-vertical">
-									<h3 class="product-title">SSL2 / SSL2+ with Production Pack Expansion</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and type...</p>
-									<p class="product-price">$229.99</p>
-									<div class="product-btns">
-										<span data-toggle="tooltip" data-placement="top" title="Add To Cart">
-											<a href="#!" class="li-icon add-to-cart"><i class="lil-shopping_cart"></i></a>
-										</span>
-										<span data-toggle="tooltip" data-placement="top" title="View">
-											<a href="product.html" class="li-icon view-details"><i class="lil-search"></i></a>
-										</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div><!-- /.product -->
-					<div class="product col-md-4 col-sm-6 col-xs-12" data-product-id="1">
-						<div class="inner-product">
-							<div class="product-thumbnail">
-								<img src="img/one.png" class="img-responsive" alt="">
-							</div>
-							<div class="product-details text-center">
-								<div class="align-vertical">
-									<h3 class="product-title">SSL2 / SSL2+ with Production Pack Expansion</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and type...</p>
-									<p class="product-price">$229.99</p>
-									<div class="product-btns">
-										<span data-toggle="tooltip" data-placement="top" title="Add To Cart">
-											<a href="#!" class="li-icon add-to-cart"><i class="lil-shopping_cart"></i></a>
-										</span>
-										<span data-toggle="tooltip" data-placement="top" title="View">
-											<a href="product.html" class="li-icon view-details"><i class="lil-search"></i></a>
-										</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div><!-- /.product -->
-					<div class="product col-md-4 col-sm-6 col-xs-12" data-product-id="1">
-						<div class="inner-product">
-							<div class="product-thumbnail">
-								<img src="img/one.png" class="img-responsive" alt="">
-							</div>
-							<div class="product-details text-center">
-								<div class="align-vertical">
-									<h3 class="product-title">SSL2 / SSL2+ with Production Pack Expansion</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and type...</p>
-									<p class="product-price">$229.99</p>
-									<div class="product-btns">
-										<span data-toggle="tooltip" data-placement="top" title="Add To Cart">
-											<a href="#!" class="li-icon add-to-cart"><i class="lil-shopping_cart"></i></a>
-										</span>
-										<span data-toggle="tooltip" data-placement="top" title="View">
-											<a href="product.html" class="li-icon view-details"><i class="lil-search"></i></a>
-										</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div><!-- /.product -->
-
-				
-				</div><!-- /.masonry -->
-				<div class="col-sm-12 text-center">
-					<a href="#!" class="btn btn-default">Show More</a>
-				</div>
-			</div><!-- /.row -->
-		</div><!-- /.container -->
-	</section><!-- /.products -->
-
-	<section class="most-popular section">
-		<div class="bg-cover" style="background-image: url(img/solid.jpeg)"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-5 col-sm-offset-7 text-left">
-					<div class="mask-left">
-						<h2>Solid State Logic Duality 72 SE with Delta Upgrade</h2>
-						<p class="description">Here is your opportunity to own a beautifully maintained, pre-owned SuperAnalogue SSL Duality 72SE with Delta Upgrade console for a fraction of the original cost. In nearly new condition, this pre-owned Duality SE has a 72-fader frame with dual SuperAnalogue/VHD mic preamps, 5.1 surround support, Total RecallTM, Delta-Control DAW and console automation upgrade, all manuals, and current software. A complete TT patchbay system including wiring is also available. Call or email for details..</p>
-						<a href="#" class="btn btn-primary pull-right">View</a>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-			</div><!-- /.row -->
-		</div><!-- /.container -->
-	</section><!-- /.most-popular -->
-
-	<section class="newsletter section">
-		<div class="bg-cover accent" style="background-image: url(img/news.jpeg)"></div>
-		<div class="container">
-			<div class="row text-center">
-				<div class="col-sm-6 col-center">
-					<h2>Join our Newsletter</h2>
-					<p>Subscribe to the newsletter to receive the latest updates and latest products and special offers.</p>
-					<form action="#!" method="POST">
-						<div class="form-group">
-							<input type="email" name="email" placeholder="Your Email" class="form-control" autocomplete="off">
-						</div>
-						<button type="submit" class="btn btn-primary btn-white">Join Now</button>
-					</form>
-				</div>
-			</div><!-- /.row -->
-		</div><!-- /.container -->
-	</section><!-- /.newsletter -->
-
-	<footer class="footer section">
-		<div class="container">
-			<div class="row text-center">
-				<ul class="accepted-payments">
-					<li><a href="#!"><i class="lil-cc-visa"></i></a></li>
-					<li><a href="#!"><i class="lil-cc-mastercard"></i></a></li>
-					<li><a href="#!"><i class="lil-cc-stripe"></i></a></li>
-					<li><a href="#!"><i class="lil-cc-paypal"></i></a></li>
-				</ul>
-				<p>© Copyright 2016. All Rights Reserved. Created by <a href="http://liliom.co" class="effect" target="_blank">Liliom</a></p>
-				<ul class="social">
-					<li><a href="https://fb.com/LiliomLab/" target="_blank"><i class="lil-facebook"></i></a></li>
-					<li><a href="https://twitter.com/LiliomLab" target="_blank"><i class="lil-twitter"></i></a></li>
-					<li><a href="https://instagram.com/LiliomLab" target="_blank"><i class="lil-instagram"></i></a></li>
-					<li><a href="https://dribbble.com/LiliomLab" target="_blank"><i class="lil-dribbble"></i></a></li>
-				</ul>
-			</div><!-- /.row -->
-		</div><!-- /.container -->
-	</footer><!-- /.footer -->
-
-	<!-- open/close -->
-	<div class="overlay overlay-simplegenie">
-		<i class="overlay-close lil-close"></i>
-		<div class="container">
-			<div class="row text-center pos-r">
-				<div class="col-md-7 col-xs-11 col-sm-11 col-center col-height-center search-form">
-					<form action="#!" method="POST" id="searchform">
-						<strong>Type a sentence or word you want to search for, And press Enter.</strong>
-						<input type="text" name="q" class="form-control" placeholder="Search..">
-					</form>
-				</div>
+	<main>
+		<div class="product">
+			<div>
+				<h2>Product Title</h2>
+				<img src="https://media.istockphoto.com/photos/running-shoes-picture-id1249496770?b=1&k=20&m=1249496770&s=170667a&w=0&h=_SUv4odBqZIzcXvdK9rqhPBIenbyBspPFiQOSDRi-RI=">
+			</div>
+			<div>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas id ducimus! isicing elit. Voluptas id ducimus</p>
+				<h1>$299.99</h1>
 			</div>
 		</div>
-	</div><!-- /.overlay -->
+		<div class="product">
+			<div>
+				<h2>Product Title</h2>
+				<img src="https://media.istockphoto.com/photos/running-shoes-picture-id1249496770?b=1&k=20&m=1249496770&s=170667a&w=0&h=_SUv4odBqZIzcXvdK9rqhPBIenbyBspPFiQOSDRi-RI=">
+			</div>
+			<div>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas id ducimus! isicing elit. Voluptas id ducimus</p>
+				<h1>$299.99</h1>
+			</div>
+		</div>
+		<div class="product">
+			<div>
+				<h2>Product Title</h2>
+				<img src="https://media.istockphoto.com/photos/running-shoes-picture-id1249496770?b=1&k=20&m=1249496770&s=170667a&w=0&h=_SUv4odBqZIzcXvdK9rqhPBIenbyBspPFiQOSDRi-RI=">
+			</div>
+			<div>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas id ducimus! isicing elit. Voluptas id ducimus</p>
+				<h1>$299.99</h1>
+			</div>
+		</div>
+		<div class="product">
+			<div>
+				<h2>Product Title</h2>
+				<img src="https://media.istockphoto.com/photos/running-shoes-picture-id1249496770?b=1&k=20&m=1249496770&s=170667a&w=0&h=_SUv4odBqZIzcXvdK9rqhPBIenbyBspPFiQOSDRi-RI=">
+			</div>
+			<div>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas id ducimus! isicing elit. Voluptas id ducimus</p>
+				<h1>$299.99</h1>
+			</div>
+		</div>
+		<div class="product">
+			<div>
+				<h2>Product Title</h2>
+				<img src="https://media.istockphoto.com/photos/running-shoes-picture-id1249496770?b=1&k=20&m=1249496770&s=170667a&w=0&h=_SUv4odBqZIzcXvdK9rqhPBIenbyBspPFiQOSDRi-RI=">
+			</div>
+			<div>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas id ducimus! isicing elit. Voluptas id ducimus</p>
+				<h1>$299.99</h1>
+			</div>
+		</div>
+		<div class="product">
+			<div>
+				<h2>Product Title</h2>
+				<img src="https://media.istockphoto.com/photos/running-shoes-picture-id1249496770?b=1&k=20&m=1249496770&s=170667a&w=0&h=_SUv4odBqZIzcXvdK9rqhPBIenbyBspPFiQOSDRi-RI=">
+			</div>
+			<div>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas id ducimus! isicing elit. Voluptas id ducimus</p>
+				<h1>$299.99</h1>
+			</div>
+		</div>
+	</main>
+	<footer>
 
-	<!-- Go to top -->
-	<a href="#top" class="go-to-top">
-		<i class="lil-angle-double-down"></i>
-	</a>
-
-	<!-- Latest compiled and minified jQuery 2.1.4 -->
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<!-- Latest compiled and minified jQuery UI 1.11.2 -->
-	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
-	<!-- Latest compiled and minified Bootstrap -->
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<!-- Latest Google Map -->
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-	<!-- Load Pace -->
-	<script type="text/javascript" src="js/pace.js"></script>
-	<!-- Load Isotope -->
-	<script type="text/javascript" src="js/isotope.min.js"></script>
-	<!-- Load Owl Carousel -->
-	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-	<!-- Load classie -->
-	<script type="text/javascript" src="js/classie.js"></script>
-	<!-- Load Fancybox -->
-	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
-	<!-- Load Overlay effect -->
-	<script type="text/javascript" src="js/overlay.js"></script>
-	<!-- Load slimScroll -->
-	<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
-	<!-- Load starrr -->
-	<script type="text/javascript" src="js/starrr.js"></script>
-	<!-- Load imagesLoaded -->
-	<script type="text/javascript" src="js/imagesloaded.pkgd.js"></script>
-	<!-- Load typed -->
-	<script type="text/javascript" src="js/typed.js"></script>
-	<!-- Theme Custom JavaScript -->
-	<script type="text/javascript" src="js/custom.js"></script>
+	</footer>
 </body>
 </html>

@@ -1,0 +1,45 @@
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+}
+main{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fafafa;
+	gap: 20px;
+	flex-wrap: wrap;
+	padding: 10rem 8rem;
+}
+.product{
+	width: 320px;
+	border: 2px solid #e6e6e6;
+	padding: 36px 20px;
+	border-radius: 6px;
+	background-color: white;
+}
+.product img{
+	width: 250px;
+	margin-bottom: 16px;
+}
+.product p{
+	font-size: 14px;
+	line-height: 16px;
+	color: #535353;
+	margin-bottom: 32px;
+}
+.product h1{
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 16px;
+	color: #086ab9;
+
+}
+.product h2{
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 16px;
+	color: #181818;
+}
